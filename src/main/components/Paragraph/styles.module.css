@@ -1,0 +1,10 @@
+.paragraph h3{
+    color: var(--yellow);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.paragraph p{
+    margin-left: 3rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--yellow);
+}

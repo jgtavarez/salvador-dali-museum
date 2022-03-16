@@ -23,9 +23,35 @@ h1,h2,h3,h4,h5,h6,p,span{
 a{
   text-decoration: none;
 }
+li{
+  list-style: none;
+}
 input, select{
   outline: none;
 }
 button{
   border: none;
+}
+:root {
+  --yellow: #9d6f00;
+  --beige: #dfdad6;
+}
+/* Tools */
+.container {
+  width: 100%;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Responsive */
+@media (min-width: 640px) {
+  .container {
+      max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
 }
