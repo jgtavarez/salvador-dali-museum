@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'FuturaLT';
+  src: url(FuturaLT.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Globals */
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  min-height: 100%;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+body{
+  font-family: 'FuturaLT', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  max-width: 100vw;
+  margin: auto;
+}
+img,video,svg{
+  max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+input, select{
+  outline: none;
+}
+button{
+  border: none;
+}
+:root {
+  --yellow: #9d6f00;
+  --beige: #dfdad6;
+  --blue: #22404a;
+}
+/* Tools */
+.container {
+  width: 100%;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Responsive */
+@media (min-width: 640px) {
+  .container {
+      max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
+  .active-link{
+    color: var(--yellow);
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
