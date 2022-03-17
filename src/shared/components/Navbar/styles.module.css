@@ -57,3 +57,26 @@ a{
 .navbar.active .hamburger div:nth-child(3){
     transform:  translateY(-400%) rotate(-40deg);
 }
+.name, .social{
+    display: none;
+}
+@media (min-width: 768px) {
+    .hamburger{
+        display: none;
+    }
+    .navbar ul{
+        height: initial;
+        width: initial;
+        position: initial;
+        flex-direction: row;
+        gap: 2rem;
+        background-color: transparent;
+    }
+    a{
+        font-size: 2rem;
+        color: var(--blue);
+    }
+    .name, .social{
+        display: initial;
+    }
+}
