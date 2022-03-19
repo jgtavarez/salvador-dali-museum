@@ -7,7 +7,7 @@ export const Navbar = () => {
   const { show, toggleNavbar } = useNavbar();
 
   return (
-    <div>
+    <div style={{backgroundColor: 'var(--beige)'}}>
       <nav className={`${styles.navbar} ${show && styles.active} container mx-auto`}>
         <h3 className={styles.name}>Salvador Dalí</h3>
 

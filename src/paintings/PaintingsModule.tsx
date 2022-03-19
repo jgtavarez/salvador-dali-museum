@@ -22,15 +22,11 @@ export const PaintingsModule = () => {
     return (
         <Provider value={{ state, openPaintingDetails, closePaintingDetails }}>
             <div style={styles.container}>
-                <Navbar />
-
                 <Routes>
                     <Route path="" element={<Paintings />} />
 
                     <Route path="*" element={<Navigate to="/home" replace />} />
                 </Routes>
-
-                <p></p>
             </div>
         </Provider>
     )
@@ -40,11 +36,9 @@ export default PaintingsModule;
 
 const styles: StyleSheet = {
     container: {
-        padding: '2rem',
-        backgroundColor: 'var(--beige)',
-        minHeight: '100vh',
+        flex: 1,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between'
+        justifyContent: 'center'
     }
 }

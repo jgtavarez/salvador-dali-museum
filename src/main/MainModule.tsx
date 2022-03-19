@@ -6,7 +6,7 @@ import { StyleSheet } from '../shared/interfaces';
 export const MainModule = () => {
     return (
         <div style={styles.container}>
-            <Navbar />
+            {/* <Navbar /> */}
 
             <Routes>
                 <Route path="home" element={<Home />} />
