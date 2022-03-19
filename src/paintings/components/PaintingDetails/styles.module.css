@@ -1,0 +1,29 @@
+.PaintingDetails{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: white;
+    padding: 2rem;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control h2{
+    font-size: 2.3rem;
+    text-align: center;
+}
+.PaintingDetails p{
+    white-space: pre-wrap;
+}
+.PaintingDetails h3{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.PaintingDetails > .line{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2rem 0;
+}
