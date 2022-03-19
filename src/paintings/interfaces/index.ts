@@ -1,6 +1,8 @@
 export interface usePaintings {
-    data?: PaintingsResp[];
-    loading: boolean
+    paintings?: PaintingsResp[];
+    loading: boolean;
+    paintingSelected?: PaintingsResp;
+    showDetails: boolean;
 }
 
 export interface PaintingsResp {

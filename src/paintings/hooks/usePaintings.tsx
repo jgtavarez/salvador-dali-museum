@@ -1,23 +1,44 @@
 import { useEffect, useState } from 'react';
 import { getPaintings } from '../api/getPaintings';
-import { usePaintings as State } from '../interfaces';
+import { usePaintings as State, PaintingsResp } from '../interfaces';
 
 export const usePaintings = () => {
 
     const [state, setState] = useState<State>({
-        loading: true
+        loading: true,
+        showDetails: false
     })
 
     useEffect(() => {
         getPaintings()
             .then(resp => {
-                setState({
-                    data: resp,
+                setState(prev => ({
+                    ...prev,
+                    paintings: resp,
                     loading: false
-                })
+                }))
             })
     }, [])
 
-    return state;
+    const openPaintingDetails = (paintingSelected: PaintingsResp) => {
+        setState(prev => ({
+            ...prev,
+            paintingSelected: paintingSelected,
+            showDetails: true
+        }))
+    }
+
+    const closePaintingDetails = () => {
+        setState(prev => ({
+            ...prev,
+            showDetails: false
+        }))
+    }
+
+    return {
+        state,
+        openPaintingDetails,
+        closePaintingDetails
+    };
 
 }

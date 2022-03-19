@@ -1,7 +1,9 @@
 import { PaintingBox } from '../../components/PaintingBox';
-import { usePaintings } from '../../hooks/usePaintings';
+import { PaintingDetails } from '../../components/PaintingDetails';
 import Carousel from 'react-elastic-carousel';
 import styles from './styles.module.css';
+import { paintingsContext } from '../../PaintingsModule';
+import { useContext } from 'react';
 
 const breakPoints = [
     { width: 1, itemsToShow: 1, showArrows: false },
@@ -9,21 +11,23 @@ const breakPoints = [
 ]
 
 export const Paintings = () => {
-    const { data, loading } = usePaintings();
+    const { state } = useContext(paintingsContext);
 
-    if (data) {
+    if (state.paintings) {
         return (
             <div className='container mx-auto'>
                 <h2 className={styles.name}>Salvador Dalí</h2>
                 <div>
                     <Carousel isRTL={false} breakPoints={breakPoints} className={styles.carousel} >
                         {
-                            data.map((painting) => (
+                            state.paintings.map((painting) => (
                                 <PaintingBox key={painting._id} painting={painting} />
                             ))
                         }
                     </Carousel>
                 </div>
+
+                <PaintingDetails />
             </div>
         )
     }
