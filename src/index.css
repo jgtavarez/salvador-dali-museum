@@ -41,6 +41,7 @@ button{
   --yellow: #9d6f00;
   --beige: #dfdad6;
   --blue: #22404a;
+  --gray: rgb(157, 158, 158);
 }
 /* Tools */
 .container {
@@ -49,6 +50,28 @@ button{
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+.rec-carousel button{
+  background-color: var(--beige)!important;
+  color: var(--yellow)!important;
+}
+.rec-carousel button:hover{
+  color: var(--beige)!important;
+  background-color: var(--yellow)!important;
+}
+.rec-carousel button:disabled{
+  background-color: rgba(103,58,183,0.1)!important;
+  color: #999!important;
+}
+.rec-pagination button.rec-dot_active{
+  box-shadow: 0 0 1px 3px var(--yellow)!important;
+  background-color: #9d6e0088;
+}
+.rec-pagination button.rec-dot_active:hover{
+  box-shadow: 0 0 1px 3px var(--yellow)!important;
+}
+.rec-pagination button:hover{
+  box-shadow: 0 0 1px 3px #9d6e0088!important;
 }
 /* Responsive */
 @media (min-width: 640px) {

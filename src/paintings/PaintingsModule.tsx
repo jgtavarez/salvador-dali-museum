@@ -13,6 +13,8 @@ export const PaintingsModule = () => {
 
                 <Route path="*" element={<Navigate to="/home" replace />} />
             </Routes>
+
+            <p>s</p>
         </div>
     )
 };
@@ -22,6 +24,10 @@ export default PaintingsModule;
 const styles: StyleSheet = {
     container: {
         padding: '2rem',
-        backgroundColor: 'var(--beige)'
+        backgroundColor: 'var(--beige)',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between'
     }
 }

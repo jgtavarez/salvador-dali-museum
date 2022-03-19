@@ -11,9 +11,8 @@ export const PaintingBox = ({ painting }: Props) => {
     <div className={styles.paintingBox}>
       <div className={styles.frame} style={{backgroundImage: `url(${painting.painting.url})`}}>
         <img src={frame} alt="paintings-frame" />
-
       </div>
-      <div>
+      <div className={styles.text}>
         <h5>{painting.name}</h5>
         <span>{painting.year}</span>
       </div>

@@ -1,10 +1,12 @@
 .name{
-    font-size: 4rem;
+    font-size: 4.3rem;
     font-weight: 900;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
     text-align: center;
     margin: 3.5rem 0;
 }
-.slider{
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .name{
+        font-size: 6rem;
+    }
 }

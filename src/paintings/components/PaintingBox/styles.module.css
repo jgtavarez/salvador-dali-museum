@@ -1,5 +1,7 @@
 .paintingBox{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .frame{
     width: 25rem;
@@ -16,4 +18,22 @@
     position: absolute;
     height: 100%;
     width: 100%;
+}
+.text{
+    text-align: center;
+    margin: 1rem;
+    line-height: 1.3;
+}
+.text h5{
+    color: var(--blue);
+    font-size: 1.7rem;
+}
+.text span{
+    color: var(--gray);
+}
+@media (min-width: 768px) {
+    .frame{
+        width: 30rem;
+        height: 35rem;
+    }
 }
