@@ -1,0 +1,10 @@
+.name{
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 3.5rem 0;
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+}

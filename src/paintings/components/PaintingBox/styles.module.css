@@ -1,0 +1,19 @@
+.paintingBox{
+
+}
+.frame{
+    width: 25rem;
+    height: 30rem;
+    background-color: brown;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    position: relative;
+}
+.frame img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
