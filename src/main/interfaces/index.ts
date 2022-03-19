@@ -1,5 +1,5 @@
 export interface UseHome {
-    data?: HomeResp;
+    data: HomeResp | null;
     loading: boolean
 }
 

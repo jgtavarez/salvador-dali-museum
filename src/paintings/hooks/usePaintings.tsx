@@ -5,6 +5,7 @@ import { usePaintings as State, PaintingsResp } from '../interfaces';
 export const usePaintings = () => {
 
     const [state, setState] = useState<State>({
+        paintings: null,
         loading: true,
         showDetails: false
     })

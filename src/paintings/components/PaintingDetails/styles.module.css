@@ -5,6 +5,13 @@
     background-color: white;
     padding: 2rem;
 }
+.PaintingDetails::-webkit-scrollbar{
+    width: 7px;
+}
+.PaintingDetails::-webkit-scrollbar-thumb{
+    background-color: #d7d9df;
+    border-radius: 5px;
+}
 .control{
     display: flex;
     justify-content: space-between;

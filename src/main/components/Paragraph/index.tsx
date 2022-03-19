@@ -1,8 +1,8 @@
 import styles from './styles.module.css';
 
 interface Props {
-    title: string;
-    content: string;
+    title: string | undefined;
+    content: string | undefined;
 }
 
 export const Paragraph = ({ title, content }: Props) => {

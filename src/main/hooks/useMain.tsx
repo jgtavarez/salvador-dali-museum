@@ -5,6 +5,7 @@ import { UseHome as State } from '../interfaces';
 export const useHome = () => {
 
     const [state, setState] = useState<State>({
+        data: null,
         loading: true
     })
 

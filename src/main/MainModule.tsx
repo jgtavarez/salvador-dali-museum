@@ -22,6 +22,7 @@ export default MainModule;
 const styles: StyleSheet = {
     container: {
         padding: '2rem',
-        backgroundColor: 'var(--beige)'
+        backgroundColor: 'var(--beige)',
+        minHeight: '100vh',
     }
 }

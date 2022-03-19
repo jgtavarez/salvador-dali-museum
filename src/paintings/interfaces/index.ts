@@ -1,5 +1,5 @@
 export interface usePaintings {
-    paintings?: PaintingsResp[];
+    paintings: PaintingsResp[] | null;
     loading: boolean;
     paintingSelected?: PaintingsResp;
     showDetails: boolean;
